@@ -11,7 +11,7 @@ html, body
     max-width: 1000px
     margin: 0 auto
     &.home-container
-        position: relative
+        position: absolute
 .name
     margin-top: 140px
     position: relative
@@ -32,6 +32,13 @@ html, body
     max-width: 500px
     a
         font-weight: bold
+    .social
+        margin-top: 1.4em
+        img
+            display: inline-block
+            margin-right: 0.8em
+            &:last-child
+                margin-right: 0
 div.top-line
     width: 100px
     height: 23px
@@ -40,10 +47,70 @@ div.top-line
     background-color: #000
 img.circles
     display: block
-    position: relative
-    top: -120px
-    left: -100px
+    position: absolute
+    top: 0px
+    margin-top: 170px
+    margin-left: -100px
     user-select: none
     user-drag: none
     -webkit-user-select: none
     -webkit-user-drag: none
+
+@media screen and (max-width: 1258px)
+    .container
+        max-width: 800px
+    img.circles
+        margin-top: 180px
+        margin-left: -120px
+
+@media screen and (max-width: 928px)
+    .container
+        padding: 0 40px
+    .name
+        margin-top: 100px
+
+@media screen and (max-width: 768px)
+    .name
+        margin-top: 70px
+    .about
+        float: left
+        margin-top: 50px
+        .social
+            margin-top: 50px
+    img.circles
+        margin-top: 100px
+        opacity: 0.5
+
+@media screen and (max-width: 676px)
+    div.top-line
+        display: none
+    .name
+        h1
+            font-size: 60px
+            &.last
+                font-size: 40px
+    img.circles
+        margin-top: 0px
+
+@media screen and (max-width: 480px)
+    html, body
+        font-size: 16px
+    .container
+        padding: 0 20px
+    .name
+        margin-top: 50px
+        h1
+            font-size: 50px
+            &.last
+                font-size: 35px
+    .about
+        margin-top: 30px
+    img.circles
+        margin-top: 50px
+
+@media screen and (max-width: 375px)
+    .name
+        h1
+            font-size: 40px
+            &.last
+                font-size: 25px
