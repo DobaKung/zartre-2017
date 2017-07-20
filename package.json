@@ -1,0 +1,26 @@
+{
+  "name": "zartre-2017",
+  "version": "1.0.0",
+  "description": "Zartre website 2017",
+  "main": "main.js",
+  "scripts": {
+    "test": "pingy dev",
+    "start": "pingy dev",
+    "export": "pingy export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DobaKung/zartre-2017.git"
+  },
+  "author": "Nathan Yiangsupapaanontr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DobaKung/zartre-2017/issues"
+  },
+  "homepage": "https://github.com/DobaKung/zartre-2017#readme",
+  "devDependencies": {
+    "@pingy/cli": "^0.6.13",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.2"
+  }
+}
